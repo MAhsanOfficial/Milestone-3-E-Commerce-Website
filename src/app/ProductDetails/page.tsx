@@ -241,7 +241,7 @@ const ProductDetails = () => {
             <AiFillCheckCircle className="text-green-600 w-5 h-5 ml-2" />
           </div>
           <p className="text-gray-500 text-base leading-[22px] mt-2">
-            "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
+            I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. Its become my favorite go-to shirt.
           </p>
           <p className="font-medium text-gray-500 mt-4">Posted on August 14, 2023</p>
         </div>
@@ -267,7 +267,7 @@ const ProductDetails = () => {
             <AiFillCheckCircle className="text-green-600 w-5 h-5 ml-2" />
           </div>
           <p className="text-gray-500 text-base leading-[22px] mt-2">
-            "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me."
+            The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, Im quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.
           </p>
           <p className="font-medium text-gray-500 mt-4">Posted on August 15, 2023</p>
         </div>
@@ -292,7 +292,7 @@ const ProductDetails = () => {
             <AiFillCheckCircle className="text-green-600 w-5 h-5 ml-2" />
           </div>
           <p className="text-gray-500 text-base leading-[22px] mt-2">
-            "This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designer's touch in every aspect of this shirt."
+            This t-shirt is a must-have for anyone who appreciates good design. The minimalistic yet stylish pattern caught my eye, and the fit is perfect. I can see the designers touch in every aspect of this shirt.
           </p>
           <p className="font-medium text-gray-500 mt-4">Posted on August 16, 2023</p>
         </div>
@@ -318,7 +318,7 @@ const ProductDetails = () => {
             <AiFillCheckCircle className="text-green-600 w-5 h-5 ml-2" />
           </div>
           <p className="text-gray-500 text-base leading-[22px] mt-2">
-            "As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. It's evident that the designer poured their creativity into making this t-shirt stand out."
+            As a UI/UX enthusiast, I value simplicity and functionality. This t-shirt not only represents those principles but also feels great to wear. Its evident that the designer poured their creativity into making this t-shirt stand out.
           </p>
           <p className="font-medium text-gray-500 mt-4">Posted on August 17, 2023</p>
         </div>
@@ -344,7 +344,7 @@ const ProductDetails = () => {
             <AiFillCheckCircle className="text-green-600 w-5 h-5 ml-2" />
           </div>
           <p className="text-gray-500 text-base leading-[22px] mt-2">
-          "This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designer's skill. It's like wearing a piece of art that reflects my passion for both design and fashion."
+          This t-shirt is a fusion of comfort and creativity. The fabric is soft, and the design speaks volumes about the designers skill. Its like wearing a piece of art that reflects my passion for both design and fashion.
           </p>
           <p className="font-medium text-gray-500 mt-4">Posted on August 18, 2023</p>
         </div>
@@ -371,7 +371,7 @@ const ProductDetails = () => {
             <AiFillCheckCircle className="text-green-600 w-5 h-5 ml-2" />
           </div>
           <p className="text-gray-500 text-base leading-[22px] mt-2">
-          "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter."
+          Im not just wearing a t-shirt; Im wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.
           </p>
           <p className="font-medium text-gray-500 mt-4">Posted on August 19, 2023</p>
         </div>
@@ -383,92 +383,6 @@ const ProductDetails = () => {
 
 <br />
 
-
-{/* 
-
-<h1 className='font-bold text-5xl ml-[431px]'>YOU MIGHT ALSO LIKE</h1><br /><br />
-<div className='flex ml-[100px] gap-4'>
-
-
-
-
-<div className="h-[444px] w-[296px] ">
-     <Image src={'/images/productdetail4.png'} alt='product1' width={295} height={298} className='rounded-[20px]'/>
-     <br />
-     <h4 className='font-bold text-xl leading-[27px]'>Polo with Contrast Trims</h4> 
-     <span className="flex w-[150px] h-[19px] gap-[13px]">
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <span>4.0/5</span>
-     </span>
-     <div className='flex gap-3'>
-    <h3 className='flex-col text-2xl'>$212</h3>
-    <h3 className='flex-col text-2xl text-gray-500'>$242</h3>
-    <span className="bg-pink-300 w-[58px] h-7 py-[3px] px-[9px] text-red-500 rounded-[62px]">-20%</span>
-    </div>
-    </div>
-
-
-    
-    <div className="h-[444px] w-[296px]">
-     <Image src={'/images/productdetail5.png'} alt='product1' width={295} height={298} className='rounded-[20px]'/>
-     <br />
-     <h4 className='font-bold text-xl leading-[27px]'>Gradient Graphic T-shirt</h4> 
-     <span className="flex w-[150px] h-[19px] gap-[13px]">
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <span>3.5/5</span>
-     </span>
-    <h3 className='flex-col text-2xl'>$145</h3>
-
-    </div>
-
-
-
-
-    
-    <div className="h-[444px] w-[296px]">
-     <Image src={'/images/productdetail6.png'} alt='product1' width={295} height={298} className='rounded-[20px]'/>
-     <br />
-     <h4 className='font-bold text-xl leading-[27px]'>Polo with Tipping Details</h4> 
-     <span className="flex w-[150px] h-[19px] gap-[13px]">
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <span>4.5/5</span>
-     </span>
-    <h3 className='flex-col text-2xl'>$180</h3>
-    </div>
-
-
-
-    <div className="h-[444px] w-[296px]">
-     <Image src={'/images/productdetail7.png'} alt='product1' width={295} height={298} className='rounded-[20px]'/>
-     <br />
-     <h4 className='font-bold text-xl leading-[27px]'>Black Striped T-shirt</h4> 
-     <span className="flex w-[150px] h-[19px] gap-[13px]">
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <FaRegStar className='text-[#FFC633] '/>
-      <span>5.0/5</span>
-     </span>
-     <div className='flex gap-3'>
-    <h3 className='flex-col text-2xl'>$120</h3>
-    <h3 className='flex-col text-2xl text-gray-500'>$150</h3>
-    <span className="bg-pink-300 w-[58px] h-7 py-[3px] px-[9px] text-red-500 rounded-[62px]">-30%</span>
-    </div>
-    </div>
-
-
-
-</div> */}
 
 
 
