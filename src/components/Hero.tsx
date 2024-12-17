@@ -41,7 +41,7 @@ const Hero = () => {
       </div>
 
   
-      <div className="bg-black h-[122px] flex flex-wrap justify-center sm:justify-between items-center p-6 sm:p-10 gap-10 sm:gap-28 w-full">
+      <div className="bg-black h-[122px] flex flex-wrap justify-center sm:justify-between items-center p-6 sm:p-10 gap-5 sm:gap-28 w-full">
         <div className="relative w-[168.48px] h-[33.16px]">
           <Image src="/images/hero-sec1.png" layout="fill" objectFit="contain" alt="hero-sec1" />
         </div>
