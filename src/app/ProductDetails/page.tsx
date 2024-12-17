@@ -10,18 +10,9 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { AiFillCheckCircle } from 'react-icons/ai';
 import Link from 'next/link';
-
-
-
-
-
-
-
 const ProductDetails = () => {
   return (
     <>    
-
-
 <div className="w-full mt-[34px] ml-[5%] border-[1px] border-gray-300 max-w-screen-lg mx-auto"></div><br />
 <div className='ml-[5%] gap-3 h-[22px] w-full sm:w-[259px] flex flex-wrap'>
   <p className='text-slate-500 text-sm sm:text-base w-fit h-[16px] gap-1 flex  leading-[21.6px]'>Home  <IoIosArrowForward className='mt-1 '/> </p>
@@ -29,9 +20,7 @@ const ProductDetails = () => {
   <p className='text-slate-500 w-fit h-[16px] gap-1 flex text-sm sm:text-base leading-[21.6px]'>Men  <IoIosArrowForward className='mt-1 '/> </p>
   <p className='text-black w-fit h-[22px] gap-1  text-sm sm:text-base leading-[21.6px]'>Tshirt</p>
 </div>
-
 <br /><br />
-
 <div className="flex flex-wrap sm:flex-nowrap justify-center items-start">
     <div className="flex flex-col gap-4 items-center">
         <Image src={'/images/productdetail1.png'} alt='product detail 1' width={152} height={167} className='rounded-[20px] border border-black w-[152px] h-[167px] mb-4 sm:mb-0' />
@@ -91,7 +80,7 @@ const ProductDetails = () => {
         <br />
 
         <div className="flex gap-4 mt-4">
-            <div className="w-[170px] h-[52px] rounded-[62px] flex justify-between py-4 px-5 bg-[#F0F0F0]"><span>-</span><span>1</span><span><RiAddLargeLine /></span></div>
+            <div className="w-[170px] h-[52px]  rounded-[62px] flex justify-between py-4 px-5 bg-[#F0F0F0]"><span>-</span><span>1</span><span><RiAddLargeLine /></span></div>
        <Link href={'/Cart'}><button className='w-full sm:w-[400px] h-[52px] rounded-[62px] pt-4 bg-black text-white pb-[23px] gap-3 font-medium leading-[21.6px]'>Add to Cart</button></Link>
         </div>
     </div>
@@ -104,36 +93,41 @@ const ProductDetails = () => {
     <h4 className='text-sm sm:text-xl font-medium'>Rating & Reviews</h4>
     <h4 className='text-sm sm:text-xl text-gray-500'>FAQs</h4>
 </div>
-
 <br />
-
 <div className="w-full sm:w-[1280px] ml-[5%] border bg-gray-400"></div>
-<div className="w-full sm:w-[414px] ml-[50%] sm:ml-[40%] border-[2px] bg-[#000000]"></div>
-
-
-
-
-
-
-
 
 <br />
 
-<div className="flex">
-   <h1 className='font-bold  text-2xl leading-[32.4px] ml-[100px]'>AllReviews <span className='text-base font-normal leading-[22px] text-gray-500'>(451)</span></h1>
-   <div className=" h-12 ml-[636px]  gap-[10px] flex">
-    <button className='w-12 h-12 rounded-[62px] bg-[#F0F0F0] flex justify-between py-4 px-5'><ImEqualizer2 height={20} width={20}/></button>
-    <button className='w-[166px] h-12 rounded-[62px] bg-[#F0F0F0] flex justify-between font-medium leading-[21.6px] py-3 px-8'>Latest  <IoIosArrowDown className='text-2xl' />    </button>
-    <button className='w-[186px] h-12 rounded-[62px] bg-[#000000] text-white flex justify-between font-medium leading-[21.6px] py-3 px-8'>  Write a Review </button>
-   </div>
-   </div>
+
+<div className="flex flex-wrap items-center justify-between p-4">
+
+  <h1 className="font-bold text-2xl leading-[32.4px] sm:ml-8">
+    AllReviews 
+    <span className="text-base font-normal leading-[22px] text-gray-500">(451)</span>
+  </h1>
+  
+  
+  <div className="flex items-center gap-3 mt-4 sm:mt-0">
+   
+    <button className="w-12 h-12 rounded-full bg-[#F0F0F0] flex items-center justify-center">
+      <ImEqualizer2 size={20} />
+    </button>
+    
+    <button className="w-[166px] h-12 rounded-full bg-[#F0F0F0] flex items-center justify-between font-medium leading-[21.6px] px-4">
+      Latest
+      <IoIosArrowDown className="text-2xl" />
+    </button>
+   
+    <button className="w-[186px] h-12 rounded-full bg-black text-white flex items-center justify-center font-medium leading-[21.6px] px-4">
+      Write a Review
+    </button>
+  </div>
+</div>
 
   <br /><br />
-
-
 <div className="flex flex-wrap justify-center gap-6 px-4">
   <div className="flex flex-wrap justify-between gap-6 w-full">
-    {/* First Review Card */}
+   
     <div className="w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] h-auto rounded-[20px] border py-7 px-6 md:px-8 gap-4 border-gray-500">
       <div className="w-full flex flex-col justify-between">
         <span className="flex justify-between items-center">
@@ -160,7 +154,6 @@ const ProductDetails = () => {
       </div>
     </div>
 
-    {/* Second Review Card */}
     <div className="w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] h-auto rounded-[20px] border py-7 px-6 md:px-8 gap-4 border-gray-500">
       <div className="w-full flex flex-col justify-between">
         <span className="flex justify-between items-center">
@@ -186,7 +179,6 @@ const ProductDetails = () => {
       </div>
     </div>
 
-    {/* Third Review Card */}
     <div className="w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] h-auto rounded-[20px] border py-7 px-6 md:px-8 gap-4 border-gray-500">
       <div className="w-full flex flex-col justify-between">
         <span className="flex justify-between items-center">
@@ -237,7 +229,6 @@ const ProductDetails = () => {
       </div>
     </div>
 
-
     <div className="w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] h-auto rounded-[20px] border py-7 px-6 md:px-8 gap-4 border-gray-500">
       <div className="w-full flex flex-col justify-between">
         <span className="flex justify-between items-center">
@@ -262,9 +253,6 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
-
-
-
     <div className="w-full sm:w-[45%] md:w-[45%] lg:w-[45%] xl:w-[45%] h-auto rounded-[20px] border py-7 px-6 md:px-8 gap-4 border-gray-500">
       <div className="w-full flex flex-col justify-between">
         <span className="flex justify-between items-center">
@@ -289,19 +277,18 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
-   <button className='w-[250px] h-[52px] ml-[585px] rounded-[62px] border border-gray-400  gap-3'>Load More Reviews</button>
+  
+   <button className="w-[250px] h-[52px] sm:w-[250px]  mx-auto rounded-full border border-gray-400 flex items-center justify-center gap-3">
+  Load More Reviews
+</button>
+
   </div>
 </div>
-
 <br />
+<h1 className="font-bold text-5xl text-center md:text-4xl sm:text-3xl">
+  YOU MIGHT ALSO LIKE
+</h1>
 
-
-
-
-
-
-
-<h1 className='font-bold text-5xl ml-[431px] md:ml-0 md:text-4xl sm:text-3xl text-center'>YOU MIGHT ALSO LIKE</h1><br /><br />
 <div className='flex flex-wrap justify-center md:justify-start gap-12 pl-[100px] md:ml-0'>
 
   <div className="h-[444px] w-[296px] md:w-[250px] sm:w-[200px]">
@@ -339,7 +326,7 @@ const ProductDetails = () => {
      <Image src={'/images/productdetail6.png'} alt='product1' width={295} height={298} className='rounded-[20px]'/>
      <br />
      <h4 className='font-bold text-xl leading-[27px] text-center md:text-lg sm:text-md'>Polo with Tipping Details</h4> 
-     <span className="flex w-[150px] h-[19px] gap-[13px] justify-center">
+     <span className="flex  h-[19px] gap-[13px] justify-center">
       <FaRegStar className='text-[#FFC633]' />
       <FaRegStar className='text-[#FFC633]' />
       <FaRegStar className='text-[#FFC633]' />
@@ -349,12 +336,11 @@ const ProductDetails = () => {
      </span>
      <h3 className='flex-col text-2xl text-center'>$180</h3>
   </div>
-
   <div className="h-[444px] w-[296px] md:w-[250px] sm:w-[200px]">
      <Image src={'/images/productdetail7.png'} alt='product1' width={295} height={298} className='rounded-[20px]'/>
      <br />
      <h4 className='font-bold text-xl leading-[27px] text-center md:text-lg sm:text-md'>Black Striped T-shirt</h4> 
-     <span className="flex w-[150px] h-[19px] gap-[13px] justify-center">
+     <span className="flex  h-[19px] gap-[13px] justify-center">
       <FaRegStar className='text-[#FFC633]' />
       <FaRegStar className='text-[#FFC633]' />
       <FaRegStar className='text-[#FFC633]' />
@@ -368,15 +354,9 @@ const ProductDetails = () => {
         <span className="bg-pink-300 w-[58px] h-7 py-[3px] px-[9px] text-red-500 rounded-[62px]">-30%</span>
      </div>
   </div>
-
 </div>
-
-
-
-
 <br /><br /><br />  <br /><br /><br /><br />
     </>
   )
 }
-
 export default ProductDetails
