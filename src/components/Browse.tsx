@@ -13,7 +13,7 @@ const Browse = () => {
 
         <div className="flex flex-wrap justify-center gap-6">
 
-          {/* First Row */}
+          
           <div className="w-full sm:w-[407px] sm:h-[289px] md:w-[407px] md:h-[289px]">
             <Image 
               src={'/images/browse-img1.png'} 
