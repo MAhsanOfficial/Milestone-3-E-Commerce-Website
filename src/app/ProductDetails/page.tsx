@@ -284,11 +284,11 @@ const ProductDetails = () => {
 
   </div>
 </div>
-<br />
+<br /><br />
 <h1 className="font-bold text-5xl text-center md:text-4xl sm:text-3xl">
   YOU MIGHT ALSO LIKE
 </h1>
-
+<br />
 <div className='flex flex-wrap justify-center md:justify-start gap-12 pl-[100px] md:ml-0'>
 
   <div className="h-[444px] w-[296px] md:w-[250px] sm:w-[200px]">
