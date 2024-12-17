@@ -32,16 +32,16 @@ const Navbar = () => {
 
        
         <div className="flex justify-between items-center px-8 py-4 w-full">
-          <h1 className='text-3xl font-black text-black px-10'>SHOP.CO</h1>
+         <Link href={'/'}> <h1 className='text-3xl font-black text-black px-10'>SHOP.CO</h1></Link>
 
           <nav className="hidden md:flex gap-4 items-center">
-            <Link href={'#'} className='text-gray-600 hover:text-black flex'>
+            <Link href={'/'} className='text-gray-600 hover:text-black flex'>
               Shop
               <IoIosArrowDown className='mt-1' />
             </Link>
-            <Link href={'#'} className='text-gray-600 hover:text-black'>On Sale</Link>
-            <Link href={'#'} className='text-gray-600 hover:text-black'>New Arrivals</Link>
-            <Link href={'#'} className='text-gray-600 hover:text-black'>Brands</Link>
+            <Link href={'/ProductDetails'} className='text-gray-600 hover:text-black'>On Sale</Link>
+            <Link href={'/Category'} className='text-gray-600 hover:text-black'>New Arrivals</Link>
+            <Link href={'/Cart'} className='text-gray-600 hover:text-black'>Brands</Link>
           </nav>
 
          

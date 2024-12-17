@@ -9,6 +9,7 @@ import { ImEqualizer2 } from "react-icons/im";
 import { IoIosArrowDown } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { AiFillCheckCircle } from 'react-icons/ai';
+import Link from 'next/link';
 
 
 
@@ -20,108 +21,19 @@ const ProductDetails = () => {
   return (
     <>    
 
-     {/* <div className="w-[1240px] mt-[34px] ml-[100px] border-[1px] border-gray-300"></div><br />
-    <div className='ml-[100px] gap-3 h-[22px] w-[259px] flex'>
-      <p className='text-slate-500 w-[63px] h-[16px] gap-1 flex text-base leading-[21.6px]'>Home  <IoIosArrowForward className='mt-1 '/> </p>
-      <p className='text-slate-500 w-[57px] h-[16px] gap-1 flex text-base leading-[21.6px]'>Shop  <IoIosArrowForward className='mt-1 '/> </p>
-      <p className='text-slate-500 w-[52px] h-[16px] gap-1 flex text-base leading-[21.6px]'>Men  <IoIosArrowForward className='mt-1 '/> </p>
-      <p className='text-black w-[52px] h-[22px] gap-1  text-base leading-[21.6px]'>T-shirt</p>
-    </div>
-
-  <br /><br />
-
-
-    <div className="flex ">
-
-        <div className="flex flex-col">
-        <Image src={'/images/productdetail1.png'} alt='product detail 1' width={152} height={167} className='ml-[100px] rounded-[20px] border border-black w-[152px] h-[167px] '/> <br />
-        <Image src={'/images/productdetail2.png'} alt='product detail 2' width={152} height={168} className='ml-[100px] flex rounded-[20px] border  w-[152px] h-[168px] '/>  <br />
-        <Image src={'/images/productdetail3.png'} alt='product detail 3' width={152} height={167} className='ml-[100px] rounded-[20px] border  w-[152px] h-[167px] '/>
-        </div>
-
-
-        <Image src={'/images/productdetail1.png'} alt='product detail 3' width={444} height={530} className='rounded-[20px] border  w-[444px] h-[530px] ml-6'/>
-        <div className="flex flex-col ml-9">
-        <h1 className='text-[40px] font-bold leading-[48px] '>ONE LIFE GRAPHIC T-SHIRT</h1>
-
-        
-      
-      
-        <span className="flex w-[139px] h-[24.71px] gap-[7.1px]">
-      <FaRegStar className='text-[#FFC633] w-[24.71px] h-[24.71px]' />
-      <FaRegStar className='text-[#FFC633] w-[24.71px] h-[24.71px] '/>
-      <FaRegStar className='text-[#FFC633] w-[24.71px] h-[24.71px]'/>
-      <FaRegStar className='text-[#FFC633] w-[24.71px] h-[24.71px] '/>
-      <span className='leading-[21.6px]'>4.5/<span className='text-gray-500'>5</span></span>
-     </span>
-     <div className='flex gap-3'>
-    <h3 className='flex-col font-bold text-[32px]'>$260</h3>
-    <h3 className='flex-col font-bold text-[32px] text-gray-500'>$300</h3>
-    <span className="bg-pink-300 w-[58px] h-7 py-[3px] px-[9px] mt-2 text-red-500 rounded-[62px]">-30%</span>
-    </div>
-
-
-     <p className='w-[590px] h-[33px] text-slate-500 leading-[22px]'>This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable
-         fabric, it offers superior comfort and style.</p>
-<br />
-     <div className="w-[590px] border bg-slate-400"></div>
-<br />
-     <p className='text-gray-500'>Select Colors</p>
-
-
-   <div className="h-[37px] w-[143px] gap-4 flex mt-4">
-       <div className="w-[37px] h-[37px] rounded-[50%] bg-[#4F4631]"><IoCheckmarkOutline className='text-white relative top-[10px] left-[10px] '/> </div>
-       <div className="w-[37px] h-[37px] rounded-[50%] bg-[#314F4A]"> </div>
-       <div className="w-[37px] h-[37px] rounded-[50%] bg-[#31344F]"></div>
-   </div>
-
-<br />
-   <div className="w-[590px] border bg-slate-400"></div>
-<br />
-<p className='text-gray-500'>Select Colors</p>
-<br />
-   <div className="w-[420px] h-[46px] gap-3 flex">
-      <button className='w-[86px] h-[46px] text-gray-500 rounded-[62px] py-3 px-6 gap-3 bg-[#F0F0F0] leading-[21.6px]'>Small</button>
-      <button className='w-[105px] h-[46px] text-gray-500 rounded-[62px] py-3 px-6 gap-3 bg-[#F0F0F0] leading-[21.6px]'>Medium</button>
-      <button className='w-[89px] h-[46px] rounded-[62px] py-3 px-6 gap-3 text-white bg-[#000000] leading-[21.6px]'>Large</button>
-      <button className='w-[104px] h-[46px] text-gray-500 rounded-[62px] py-3 px-6 gap-3 bg-[#F0F0F0] leading-[21.6px]'>XLarge</button>
-   </div>
-
-   <br />
-   <div className="w-[590px] border bg-slate-400"></div>
-<br />
-
-<div className="flex gap-4">
-  <div className="w-[170px] h-[52px] rounded-[62px] flex justify-between py-4 px-5 bg-[#F0F0F0]"><span>-</span><span>1</span><span><RiAddLargeLine /></span></div>
-  <button className='w-[400px] h-[52px] rounded-[62px] pt-4 bg-black text-white pb-[23px] gap-3 font-medium leading-[21.6px]'>Add to Cart</button>
-</div>
-    </div>
-    </div>
-
-<br /><br /><br />
-   <div className="flex">
-    <h4 className=' h-[14px] ml-[240px] text-xl leading-[22px] text-gray-500'>Product Details</h4>
-    <h4 className=' h-[14px] ml-[240px]  leading-[22px] font-medium text-xl'>Rating & Reviews</h4>
-    <h4 className=' h-[14px] ml-[240px] text-xl leading-[22px] text-gray-500'>FAQs</h4>
-<br />
-<br />
-   </div>
-    <div className="w-[1280px] ml-[100px] border bg-gray-400"></div>
-    <div className="w-[414px] ml-[513px] border-[2px] bg-[#000000]"></div> */}
-
 
 <div className="w-full mt-[34px] ml-[5%] border-[1px] border-gray-300 max-w-screen-lg mx-auto"></div><br />
 <div className='ml-[5%] gap-3 h-[22px] w-full sm:w-[259px] flex flex-wrap'>
-  <p className='text-slate-500 text-sm sm:text-base w-fit h-[16px] gap-1 flex text-base leading-[21.6px]'>Home  <IoIosArrowForward className='mt-1 '/> </p>
+  <p className='text-slate-500 text-sm sm:text-base w-fit h-[16px] gap-1 flex  leading-[21.6px]'>Home  <IoIosArrowForward className='mt-1 '/> </p>
   <p className='text-slate-500 w-fit h-[16px] gap-1 flex text-sm sm:text-base leading-[21.6px]'>Shop  <IoIosArrowForward className='mt-1 '/> </p>
   <p className='text-slate-500 w-fit h-[16px] gap-1 flex text-sm sm:text-base leading-[21.6px]'>Men  <IoIosArrowForward className='mt-1 '/> </p>
-  <p className='text-black w-fit h-[22px] gap-1  text-sm sm:text-base leading-[21.6px]'>T-shirt</p>
+  <p className='text-black w-fit h-[22px] gap-1  text-sm sm:text-base leading-[21.6px]'>Tshirt</p>
 </div>
 
 <br /><br />
 
 <div className="flex flex-wrap sm:flex-nowrap justify-center items-start">
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col gap-4 items-center">
         <Image src={'/images/productdetail1.png'} alt='product detail 1' width={152} height={167} className='rounded-[20px] border border-black w-[152px] h-[167px] mb-4 sm:mb-0' />
         <Image src={'/images/productdetail2.png'} alt='product detail 2' width={152} height={168} className='rounded-[20px] border w-[152px] h-[168px] mb-4 sm:mb-0' />
         <Image src={'/images/productdetail3.png'} alt='product detail 3' width={152} height={167} className='rounded-[20px] border w-[152px] h-[167px]' />
@@ -180,7 +92,7 @@ const ProductDetails = () => {
 
         <div className="flex gap-4 mt-4">
             <div className="w-[170px] h-[52px] rounded-[62px] flex justify-between py-4 px-5 bg-[#F0F0F0]"><span>-</span><span>1</span><span><RiAddLargeLine /></span></div>
-            <button className='w-full sm:w-[400px] h-[52px] rounded-[62px] pt-4 bg-black text-white pb-[23px] gap-3 font-medium leading-[21.6px]'>Add to Cart</button>
+       <Link href={'/Cart'}><button className='w-full sm:w-[400px] h-[52px] rounded-[62px] pt-4 bg-black text-white pb-[23px] gap-3 font-medium leading-[21.6px]'>Add to Cart</button></Link>
         </div>
     </div>
 </div>
@@ -208,7 +120,7 @@ const ProductDetails = () => {
 <br />
 
 <div className="flex">
-   <h1 className='font-bold  text-2xl leading-[32.4px] ml-[100px]'>All Reviews <span className='text-base font-normal leading-[22px] text-gray-500'>(451)</span></h1>
+   <h1 className='font-bold  text-2xl leading-[32.4px] ml-[100px]'>AllReviews <span className='text-base font-normal leading-[22px] text-gray-500'>(451)</span></h1>
    <div className=" h-12 ml-[636px]  gap-[10px] flex">
     <button className='w-12 h-12 rounded-[62px] bg-[#F0F0F0] flex justify-between py-4 px-5'><ImEqualizer2 height={20} width={20}/></button>
     <button className='w-[166px] h-12 rounded-[62px] bg-[#F0F0F0] flex justify-between font-medium leading-[21.6px] py-3 px-8'>Latest  <IoIosArrowDown className='text-2xl' />    </button>

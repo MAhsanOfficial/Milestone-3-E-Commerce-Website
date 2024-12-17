@@ -8,7 +8,7 @@ const Products = () => {
     <>
       <br /><br />
       <h1 className='flex justify-center font-bold text-5xl '>NEW ARRIVALS</h1><br /><br />
-      <div className="flex flex-wrap justify-center gap-4 px-4 w-full">
+      <div className="flex flex-wrap justify-center gap-4 px-2 w-full">
 
         <Link href={'/ProductDetails'}>
           <div className="h-[444px] w-[296px] md:w-[250px] lg:w-[280px] xl:w-[296px] flex flex-col items-center">
@@ -83,7 +83,7 @@ const Products = () => {
       <br /><br /><br />
 
       <h1 className='flex justify-center font-bold text-5xl '>TOP SELLING</h1><br /><br />
-      <div className="flex flex-wrap justify-center gap-4 px-4 w-full">
+      <div className="flex flex-wrap justify-center gap-4 px-2 w-full">
 
         <div className="h-[444px] w-[296px] md:w-[250px] lg:w-[280px] xl:w-[296px] flex flex-col items-center">
           <Image src={'/images/product5.png'} alt='product5' width={295} height={298} className='rounded-[20px]' />
