@@ -833,6 +833,7 @@ const Products: React.FC = () => {
 
   return (
     <div id="new-arrival">
+      <h1 className="flex justify-center text-5xl font-mono font-bold underline text-yellow-500 mt-6 pb-7">New-Arrivals</h1>
     <div className="p-5">
       {loading ? (
         <p>Loading...</p>

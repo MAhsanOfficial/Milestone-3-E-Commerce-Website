@@ -1,14 +1,7 @@
-
-
-
-
-
-
-
-
-'use client';  // Mark this component as a Client Component
+'use client';
 
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import Link from 'next/link';
 
 interface Product {
@@ -20,46 +13,52 @@ interface Product {
   description: string;
 }
 
-const fetchProducts = async (): Promise<Product[]> => {
-  try {
-    const response = await fetch('https://fakestoreapi.com/products');
-    if (!response.ok) {
-      throw new Error('Failed to fetch products');
-    }
-    return await response.json();
-  } catch (error) {
-    console.error('Error fetching products:', error);
-    return [];
-  }
-};
-
-const ProductList = () => {
+const CategoryPage = () => {
   const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    const loadProducts = async () => {
-      const productsData = await fetchProducts();
-      setProducts(productsData);
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('https://fakestoreapi.com/products');
+        setProducts(response.data);
+        setLoading(false);
+      } catch (err) {
+        setError('Error fetching products');
+        setLoading(false);
+      }
     };
-    loadProducts();
+
+    fetchProducts();
   }, []);
+
+  if (loading) {
+    return <div className="text-center">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-center text-red-500">{error}</div>;
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 py-10">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-gray-800 mb-4">Product List</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-white rounded-lg shadow-lg">
+        <h1 className="text-3xl font-bold text-gray-800 mb-8">Product Category</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product) => (
-            <div key={product.id} className="border rounded-lg p-4">
+            <div key={product.id} className="border rounded-lg p-4 bg-white shadow-md">
               <img
                 src={product.image}
                 alt={product.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h2 className="text-xl font-semibold">{product.title}</h2>
-              <p className="text-lg text-gray-500">${product.price.toFixed(2)}</p>
-              <Link href={`/products/${product.id}`}>
-                <button className="text-indigo-600 hover:text-indigo-800 mt-4 block">View Details</button>
+              <h2 className="text-xl font-semibold text-gray-800">{product.title}</h2>
+              <p className="text-lg text-gray-500 mb-4">${product.price.toFixed(2)}</p>
+              <Link href={`/Category/${product.id}`}>
+                <button className="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-800 transition duration-300">
+                  View Details
+                </button>
               </Link>
             </div>
           ))}
@@ -69,4 +68,4 @@ const ProductList = () => {
   );
 };
 
-export default ProductList;
+export default CategoryPage;

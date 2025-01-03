@@ -79,14 +79,14 @@ const ProductDetails = async ({ params }: { params: { id: string } }) => {
             {product.images.map((image, index) => (
               <img
                 key={index}
-                className="w-32 h-32 object-cover rounded-md"
+                className="w-32 h-32  flex flex-col object-cover rounded-md"
                 src={image}
                 alt={`Product ${product.id} - Image ${index + 1}`}
               />
             ))}
           </div>
-          <h3 className="text-2xl font-semibold mb-2">{product.title}</h3>
-          <p className="text-lg font-bold text-gray-700">${product.price}</p>
+          <h3 className="text-2xl font-mono font-semibold mb-2">{product.title}</h3>
+          <p className="text-lg  underline font-bold text-gray-700">${product.price}</p>
           <p className="text-sm text-gray-700 mt-4">{product.description}</p>
         </div>
       </div>
