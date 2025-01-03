@@ -166,5 +166,4 @@ const CategoryPage = () => {
     </div>
   );
 };
-
 export default CategoryPage;
