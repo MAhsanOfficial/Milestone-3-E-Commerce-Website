@@ -54,9 +54,9 @@ const Hero = () => {
         <div className="relative w-[194px] h-[31.2px]">
           <Image src="/images/hero-sec4.png" layout="fill" objectFit="contain" alt="hero-sec4" />
         </div>
-        <div className="relative w-[206.79px] h-[33.5px]">
+        {/* <div className="relative w-[206.79px] h-[33.5px]">
           <Image src="/images/hero-sec5.png" layout="fill" objectFit="contain" alt="hero-sec5" />
-        </div>
+        </div> */}
       </div>
       
     </>
