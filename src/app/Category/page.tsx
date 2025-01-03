@@ -6,7 +6,7 @@
 
 
 
-'use client';  
+'use client';  // Mark this component as a Client Component
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
